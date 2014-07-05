@@ -2,12 +2,12 @@
 
 general_stuff(){
 echo "Coisas diversas"
-sudo apt-get install --yes ubuntu-restricted-extras parcellite
+sudo apt-get install --yes ubuntu-restricted-extras parcellite pdfchain
 }
 
 devs(){
 echo "Coisas diversas para desenvolvimento"
-sudo apt-get install --yes build-essential git-core ia32-libs
+sudo apt-get install --yes build-essential git-core ia32-libs gedit-developer-plugins
 }
 
 java_stuff(){
