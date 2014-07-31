@@ -7,7 +7,7 @@ sudo apt-get install --yes ubuntu-restricted-extras parcellite pdfchain
 
 devs(){
 echo "Coisas diversas para desenvolvimento"
-sudo apt-get install --yes build-essential git-core ia32-libs gedit-developer-plugins
+sudo apt-get install --yes build-essential git gedit-developer-plugins
 }
 
 java_stuff(){
