@@ -35,8 +35,9 @@ source ~/.bashrc
 
 dropbox_stuff(){
 echo "Dropbox"
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb -O /tmp/dropbox_1.6.0_amd64.deb
-sudo dpkg -i /tmp/dropbox_1.6.0_amd64.deb
+echo "TODO https://www.dropbox.com/install?os=lnx"
+#wget https://www.dropbox.com/download?plat=lnx.x86_64 -O /tmp/dropbox.deb
+#sudo dpkg -i /tmp/dropbox.deb
 }
 
 
