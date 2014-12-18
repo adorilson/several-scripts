@@ -2,7 +2,8 @@
 
 general_stuff(){
 echo "Coisas diversas"
-sudo apt-get install --yes ubuntu-restricted-extras parcellite pdfchain
+sudo apt-get install --yes ubuntu-restricted-extras parcellite pdfchain texlive-science
+texlive-xetex textlive-math-extra
 }
 
 devs(){
@@ -23,7 +24,7 @@ sudo apt-get build-dep python-lxml
 }
 
 conf_virtualenvwrapper(){
-echo "Configurando virtualenvwrapper"
+echo "Configurando virtualenvwrpper"
 # Referencia: http://www.arruda.blog.br/programacao/python/usando-virtualenvwrapper/
 mkdir ~/.virtualenvs
 cp ~/.bashrc ~/.bashrc_OLD
