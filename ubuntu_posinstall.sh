@@ -2,12 +2,13 @@
 
 general_stuff(){
 echo "Coisas diversas"
-sudo apt-get install --yes ubuntu-restricted-extras parcellite pdfchain
+sudo apt-get install --yes ubuntu-restricted-extras parcellite pdfchain texlive-science
+texlive-xetex textlive-math-extra
 }
 
 devs(){
 echo "Coisas diversas para desenvolvimento"
-sudo apt-get install --yes build-essential git-core ia32-libs gedit-developer-plugins
+sudo apt-get install --yes build-essential git gedit-developer-plugins
 }
 
 java_stuff(){
@@ -23,7 +24,7 @@ sudo apt-get build-dep python-lxml
 }
 
 conf_virtualenvwrapper(){
-echo "Configurando virtualenvwrapper"
+echo "Configurando virtualenvwrpper"
 # Referencia: http://www.arruda.blog.br/programacao/python/usando-virtualenvwrapper/
 mkdir ~/.virtualenvs
 cp ~/.bashrc ~/.bashrc_OLD
@@ -35,8 +36,9 @@ source ~/.bashrc
 
 dropbox_stuff(){
 echo "Dropbox"
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb -O /tmp/dropbox_1.6.0_amd64.deb
-sudo dpkg -i /tmp/dropbox_1.6.0_amd64.deb
+echo "TODO https://www.dropbox.com/install?os=lnx"
+#wget https://www.dropbox.com/download?plat=lnx.x86_64 -O /tmp/dropbox.deb
+#sudo dpkg -i /tmp/dropbox.deb
 }
 
 
