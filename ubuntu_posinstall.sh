@@ -62,8 +62,14 @@ echo 'GIMP, Inkscape etc.'
 sudo apt-get install --yes gimp inkscape dia
 }
 
+mendeley(){
+echo 'Mendeley'
+sudo wget http://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest -O /tmp/mendeley.deb
+sudo dpkg -i /tmp/mendeley.deb
+}
+
 #remove
 #upgrade
-general_stuffs
-
+#general_stuffs
+mendeley
 
