@@ -13,7 +13,13 @@ sudo apt-get install --yes build-essential git gedit-developer-plugins
 
 java_stuff(){
 echo "Coisa de Java"
-sudo apt-get install --yes openjdk-7-jre-headless openjdk-7-jdk 
+#sudo apt-get install --yes openjdk-7-jre-headless openjdk-7-jdk 
+
+# I use Android Studio, so I need Java Oracle
+sudo apt-get install --yes python-software-properties # just for manage repository by a easy way
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update --yes
+sudo apt-get install oracle-java8-installer
 }
 
 python_stuff(){
@@ -73,5 +79,5 @@ sudo dpkg -i /tmp/mendeley.deb
 #remove
 #upgrade
 #general_stuffs
-mendeley
-
+#mendeley
+java_stuff
