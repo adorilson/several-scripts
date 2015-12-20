@@ -3,7 +3,7 @@
 general_stuff(){
 echo "Coisas diversas"
 sudo apt-get install --yes ubuntu-restricted-extras parcellite pdfchain texlive-science
-texlive-xetex textlive-math-extra account-plugin-irc firefox gnucash
+texlive-xetex textlive-math-extra account-plugin-irc firefox gnucash pdfshuffler
 }
 
 devs(){
