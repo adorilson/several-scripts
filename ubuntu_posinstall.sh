@@ -70,6 +70,9 @@ skype_stuff(){
 echo "Skype"
 wget http://www.skype.com/go/getskype-linux-beta-ubuntu-64 -O /tmp/skype.deb
 sudo dpkg -i /tmp/skype.deb
+# talvez apenas não funcione, então tente
+# sudo apt-get -f install
+# TODO fixme
 }
 
 graphic_tools(){
@@ -79,13 +82,13 @@ sudo apt-get install --yes gimp inkscape dia
 
 mendeley(){
 echo 'Mendeley'
-sudo wget http://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest -O /tmp/mendeley.deb
+wget http://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest -O /tmp/mendeley.deb
 sudo dpkg -i /tmp/mendeley.deb
 }
 
 copy(){
 echo 'Copy https://www.copy.com TODO: need to improveit '
-sudo wget - "https://copy.com/install/linux/Copy.tgz" -O /opt/copy.tgz
+wget - "https://copy.com/install/linux/Copy.tgz" -O /opt/copy.tgz
 cd /opt && sudo tar xzf /opt/copy.tgz
 sudo /opt/copy/x86_64/CopyAgent –installOverlay
 }
@@ -94,9 +97,10 @@ sudo /opt/copy/x86_64/CopyAgent –installOverlay
 #upgrade
 #general_stuffs
 #mendeley
-java_stuff
+#java_stuff
 #dropbox_stuff
 #copy
 #libreoffice5
 #python_stuff
 #devs
+skype_stuff
