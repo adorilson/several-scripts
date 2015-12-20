@@ -75,9 +75,17 @@ sudo wget http://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydeskt
 sudo dpkg -i /tmp/mendeley.deb
 }
 
+copy(){
+echo 'Copy https://www.copy.com TODO: need to improveit '
+sudo wget - "https://copy.com/install/linux/Copy.tgz" -O /opt/copy.tgz
+cd /opt && sudo tar xzf /opt/copy.tgz
+sudo /opt/copy/x86_64/CopyAgent –installOverlay
+}
+
 #remove
 #upgrade
 #general_stuffs
 #mendeley
 #java_stuff
-dropbox_stuff
+#dropbox_stuff
+copy
