@@ -19,7 +19,7 @@ echo "Coisa de Java"
 sudo apt-get install --yes python-software-properties # just for manage repository by a easy way
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update --yes
-sudo apt-get install oracle-java8-installer
+sudo apt-get install oracle-java9-installer
 }
 
 python_stuff(){
@@ -94,7 +94,9 @@ sudo /opt/copy/x86_64/CopyAgent –installOverlay
 #upgrade
 #general_stuffs
 #mendeley
-#java_stuff
+java_stuff
 #dropbox_stuff
 #copy
-libreoffice5
+#libreoffice5
+#python_stuff
+#devs
