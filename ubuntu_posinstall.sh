@@ -3,7 +3,7 @@
 general_stuff(){
 echo "Coisas diversas"
 sudo apt-get install --yes ubuntu-restricted-extras parcellite pdfchain texlive-science
-texlive-xetex textlive-math-extra
+texlive-xetex textlive-math-extra account-plugin-irc
 }
 
 devs(){
@@ -62,7 +62,8 @@ libreoffice5(){
 echo "LibreOffice 5"
 # Referencia http://news.softpedia.com/news/how-to-install-libreoffice-5-0-on-ubuntu-15-04-14-04-lts-and-12-04-lts-488713.shtml
 sudo add-apt-repository ppa:libreoffice/ppa
-sudo apt-get install libreoffice
+sudo apt-get update
+sudo apt-get install libreoffice libreoffice-l10n-pt-br
 }
 
 skype_stuff(){
