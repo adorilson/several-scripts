@@ -55,7 +55,14 @@ sudo apt-get upgrade --yes
 
 remove(){
 echo "Remove"
-sudo apt-get remove --yes thunderbird deja-dup mysql-common
+sudo apt-get remove --yes thunderbird deja-dup libreoffice*
+}
+
+libreoffice5(){
+echo "LibreOffice 5"
+# Referencia http://news.softpedia.com/news/how-to-install-libreoffice-5-0-on-ubuntu-15-04-14-04-lts-and-12-04-lts-488713.shtml
+sudo add-apt-repository ppa:libreoffice/ppa
+sudo apt-get install libreoffice
 }
 
 skype_stuff(){
@@ -88,4 +95,5 @@ sudo /opt/copy/x86_64/CopyAgent –installOverlay
 #mendeley
 #java_stuff
 #dropbox_stuff
-copy
+#copy
+libreoffice5
