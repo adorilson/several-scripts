@@ -3,7 +3,7 @@
 general_stuff(){
 echo "Coisas diversas"
 sudo apt-get install --yes ubuntu-restricted-extras parcellite pdfchain texlive-science
-texlive-xetex textlive-math-extra account-plugin-irc
+texlive-xetex textlive-math-extra account-plugin-irc firefox gnucash
 }
 
 devs(){
@@ -96,11 +96,12 @@ sudo /opt/copy/x86_64/CopyAgent –installOverlay
 #remove
 #upgrade
 #general_stuffs
-#mendeley
+mendeley
 #java_stuff
 #dropbox_stuff
 #copy
 #libreoffice5
 #python_stuff
 #devs
-skype_stuff
+#skype_stuff
+graphic_tools
