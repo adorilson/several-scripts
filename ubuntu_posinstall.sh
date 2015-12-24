@@ -2,7 +2,7 @@
 
 general_stuff(){
 echo "Coisas diversas"
-sudo apt-get install --yes ubuntu-restricted-extras parcellite pdfchain texlive-science
+sudo apt-get install --yes ubuntu-restricted-extras glipper pdfchain texlive-science
 texlive-xetex textlive-math-extra account-plugin-irc firefox gnucash pdfshuffler
 wine
 }
