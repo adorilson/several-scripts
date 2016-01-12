@@ -2,8 +2,10 @@
 
 general_stuff(){
 echo "Coisas diversas"
-sudo apt-get install --yes ubuntu-restricted-extras glipper pdfchain texlive-science
-texlive-xetex textlive-math-extra account-plugin-irc firefox gnucash pdfshuffler
+sudo apt-get install --yes ubuntu-restricted-extras glipper pdfchain
+texlive-science texlive-xetex textlive-math-extra texlive-lang-portuguese
+texlive-fonts-recommended
+account-plugin-irc firefox gnucash pdfshuffler
 wine
 }
 
