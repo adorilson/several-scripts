@@ -5,14 +5,21 @@ echo "Coisas diversas"
 sudo apt-get install --yes ubuntu-restricted-extras glipper pdfchain
 texlive-science texlive-xetex textlive-math-extra texlive-lang-portuguese
 texlive-fonts-recommended
-account-plugin-irc firefox gnucash pdfshuffler
-wine
+account-plugin-irc firefox gnucash pdfshuffler amule pyrenamer
+wine gnome-do gnome-do-plugins gparted gnome-mplayer mplayer htop
+nautilus-admin nautilus-open-terminal openssh-server pastebinit pidgin
 }
-
+ 
 devs(){
 echo "Coisas diversas para desenvolvimento"
-sudo apt-get install --yes build-essential git gedit-developer-plugins
-}
+sudo apt-get install --yes build-essential git gitk gedit-developer-plugins
+gedit-plugins geany gtranslator meld
+libgdome2-0 libgnet2.0-0
+guile-2.0-dev libcairomm-1.0-dev libdbus-glib-1-dev libgdome2-dev
+libglib2.0-dev libglibmm-2.4-dev libgnet-dev libgstreamer0.10-dev libgtkmm-3.0-dev
+libpanel-applet-4-dev libpangomm-1.4-dev libpulse-dev libsigc++-2.0-dev libxmu-dev
+libxtst-dev 
+} 
 
 java_stuff(){
 echo "Coisa de Java"
@@ -27,7 +34,7 @@ sudo apt-get install oracle-java9-installer
 
 python_stuff(){
 echo "Coisas de Python"
-sudo apt-get install --yes python-pip python-dev
+sudo apt-get install --yes python-pip python-dev bpython ipython
 sudo pip install virtualenv virtualenvwrapper
 sudo apt-get build-dep python-lxml
 }
@@ -95,6 +102,20 @@ wget - "https://copy.com/install/linux/Copy.tgz" -O /opt/copy.tgz
 cd /opt && sudo tar xzf /opt/copy.tgz
 sudo /opt/copy/x86_64/CopyAgent –installOverlay
 }
+
+to_children(){
+echo 'to_children'
+sudo apt-get install --yes ktuberling gcompris-sound-ptbr
+}
+
+#   
+
+# instalar do repo funcoeszz
+
+       
+python-cheetah python-django python-sqlite python-scipy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     python3-minimal skype slib startupmanager subversion sun-java6-jre tuxmath tuxpaint tuxpaint-plugins traceroute ubuntu-restricted-extras vim vlc wireshark workrave xchat x11proto-record-dev texlive texlive-humanities texlive-lang-portuguese babel latex-beamer abntex aspell-pt-br gedit-plugins gedit-latex-plugin rake rubber ruby texmaker ipython  
+
+    
 
 #remove
 #upgrade
