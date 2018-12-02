@@ -18,8 +18,22 @@ libgdome2-0 libgnet2.0-0
 guile-2.0-dev libcairomm-1.0-dev libdbus-glib-1-dev libgdome2-dev
 libglib2.0-dev libglibmm-2.4-dev libgnet-dev libgstreamer0.10-dev libgtkmm-3.0-dev
 libpanel-applet-4-dev libpangomm-1.4-dev libpulse-dev libsigc++-2.0-dev libxmu-dev
-libxtst-dev 
+libxtst-dev lib32stdc++6
 } 
+
+latex_stuff(){
+echo "Coisas de Latex"
+sudo apt-get install --yes 
+texlive-science         texlive-xetex               textlive-math-extra
+texlive-lang-portuguese texlive-fonts-recommended   texlive-latex-extra
+texlive-publishers      texlive-publishers-doc      abntex 
+latexdiff               latex-beamer                texlive
+texmaker                gedit-latex-plugin          texlive-humanities
+
+git clone https://gitlab.com/git-latexdiff/git-latexdiff.git ~/workspace/
+
+}
+>>>>>>> 64e808ec98e268441267e42d0aaabaac8c5b9059
 
 java_stuff(){
 echo "Coisa de Java"
@@ -111,11 +125,21 @@ sudo apt-get install --yes ktuberling gcompris-sound-ptbr
 #   
 
 # instalar do repo funcoeszz
-
        
 python-cheetah python-django python-sqlite python-scipy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     python3-minimal skype slib startupmanager subversion sun-java6-jre tuxmath tuxpaint tuxpaint-plugins traceroute ubuntu-restricted-extras vim vlc wireshark workrave xchat x11proto-record-dev texlive texlive-humanities texlive-lang-portuguese babel latex-beamer abntex aspell-pt-br gedit-plugins gedit-latex-plugin rake rubber ruby texmaker ipython  
+babel  aspell-pt-br gedit-plugins  
 
-    
+set_environment(){
+echo "# setting Android home sdk" >>~/.bashrc
+echo "export ANDROID_HOME=/home/adorilson/workspace/ides/Android/sdk" >>~/.bashrc
+
+# setting history command >>~/.bashrc
+echo "export HISTIGNORE='ls:pwd:sudo apt-get autoremove:export'" >>~/.bashrc
+echo "export HISTCONTROL=ignoreboth:erasedups" >>~/.bashrc
+
+# setting git latexdiff
+echo "export PATH=~/workspace/git-latexdiff:$PATH" >>~/.bashrc
+}
 
 #remove
 #upgrade
