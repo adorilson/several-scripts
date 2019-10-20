@@ -2,42 +2,38 @@
 
 general_stuff(){
 echo "Coisas diversas"
-sudo apt-get install --yes ubuntu-restricted-extras glipper pdfchain
-texlive-science texlive-xetex textlive-math-extra texlive-lang-portuguese
-texlive-fonts-recommended
-account-plugin-irc firefox gnucash pdfshuffler amule pyrenamer
-wine gnome-do gnome-do-plugins gparted gnome-mplayer mplayer htop
-nautilus-admin nautilus-open-terminal openssh-server pastebinit pidgin
+sudo apt install --yes ubuntu-restricted-extras gpaste \
+empathy gnucash pdfshuffler amule wine-stable gnome-do gnome-do-plugins \
+gparted mplayer htop nautilus-admin openssh-server pastebinit pidgin \
+funcoeszz subversion traceroute vim vlc wireshark workrave xchat aspell-pt-br
 }
- 
+
 devs(){
 echo "Coisas diversas para desenvolvimento"
-sudo apt-get install --yes build-essential git gitk gedit-developer-plugins
-gedit-plugins geany gtranslator meld
-libgdome2-0 libgnet2.0-0
-guile-2.0-dev libcairomm-1.0-dev libdbus-glib-1-dev libgdome2-dev
-libglib2.0-dev libglibmm-2.4-dev libgnet-dev libgstreamer0.10-dev libgtkmm-3.0-dev
-libpanel-applet-4-dev libpangomm-1.4-dev libpulse-dev libsigc++-2.0-dev libxmu-dev
-libxtst-dev lib32stdc++6
-} 
+sudo apt install --yes build-essential git gitk gedit-developer-plugins \
+gedit-plugins geany gtranslator meld libgdome2-0 libgdome2-dev \
+guile-2.2-dev guile-2.2 libcairomm-1.0-dev  \
+libdbus-glib2.0-cil libdbus-glib2.0-cil-dev \
+libglibmm-2.4-dev libgstreamer1.0-dev libgtkmm-3.0-dev \
+libpanel-applet-dev libpulse-dev libxmu-dev lib32stdc++6 \
+slib
+}
 
 latex_stuff(){
-echo "Coisas de Latex"
-sudo apt-get install --yes 
-texlive-science         texlive-xetex               textlive-math-extra
-texlive-lang-portuguese texlive-fonts-recommended   texlive-latex-extra
-texlive-publishers      texlive-publishers-doc      abntex 
-latexdiff               latex-beamer                texlive
-texmaker                gedit-latex-plugin          texlive-humanities
+echo "Coisas de Latex texlive*"
+sudo apt install --yes
+texlive-science         texlive-xetex               abntex \
+texlive-publishers      texlive-publishers-doc      texlive \
+texlive-humanities      latexdiff                            \
+texmaker                gedit-latex-plugin                   \
 
 git clone https://gitlab.com/git-latexdiff/git-latexdiff.git ~/workspace/
-
 }
->>>>>>> 64e808ec98e268441267e42d0aaabaac8c5b9059
+
 
 java_stuff(){
-echo "Coisa de Java"
-#sudo apt-get install --yes openjdk-7-jre-headless openjdk-7-jdk 
+echo "Coisa de Java TODO"
+#sudo apt-get install --yes openjdk-7-jre-headless openjdk-7-jdk
 
 # I use Android Studio, so I need Java Oracle
 sudo apt-get install --yes python-software-properties # just for manage repository by a easy way
@@ -48,9 +44,9 @@ sudo apt-get install oracle-java9-installer
 
 python_stuff(){
 echo "Coisas de Python"
-sudo apt-get install --yes python-pip python-dev bpython ipython
-sudo pip install virtualenv virtualenvwrapper
-sudo apt-get build-dep python-lxml
+sudo apt install --yes python3-pip python3-dev bpython3 ipython3 python3-lxml \
+python-cheetah python3-django python-sqlite python3-scipy
+sudo pip3 install virtualenv virtualenvwrapper
 }
 
 conf_virtualenvwrapper(){
@@ -66,28 +62,20 @@ source ~/.bashrc
 
 dropbox_stuff(){
 echo "Dropbox"
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -O /tmp/dropbox.deb
+wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2018.11.28_amd64.deb -O /tmp/dropbox.deb
 sudo dpkg -i /tmp/dropbox.deb
 }
 
 
 upgrade(){
 echo "Upgrade"
-sudo apt-get update --yes
-sudo apt-get upgrade --yes
+sudo apt update --yes
+sudo apt upgrade --yes
 }
 
 remove(){
 echo "Remove"
-sudo apt-get remove --yes thunderbird deja-dup libreoffice*
-}
-
-libreoffice5(){
-echo "LibreOffice 5"
-# Referencia http://news.softpedia.com/news/how-to-install-libreoffice-5-0-on-ubuntu-15-04-14-04-lts-and-12-04-lts-488713.shtml
-sudo add-apt-repository ppa:libreoffice/ppa
-sudo apt-get update
-sudo apt-get install libreoffice libreoffice-l10n-pt-br
+sudo apt-get remove --yes thunderbird deja-dup
 }
 
 skype_stuff(){
@@ -110,25 +98,11 @@ wget http://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-la
 sudo dpkg -i /tmp/mendeley.deb
 }
 
-copy(){
-echo 'Copy https://www.copy.com TODO: need to improveit '
-wget - "https://copy.com/install/linux/Copy.tgz" -O /opt/copy.tgz
-cd /opt && sudo tar xzf /opt/copy.tgz
-sudo /opt/copy/x86_64/CopyAgent –installOverlay
-}
-
 to_children(){
 echo 'to_children'
-sudo apt-get install --yes ktuberling gcompris-sound-ptbr
+sudo apt install --yes ktuberling gcompris tuxmath tuxpaint tuxpaint-plugins-default
 }
-
-#   
-
-# instalar do repo funcoeszz
-       
-python-cheetah python-django python-sqlite python-scipy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     python3-minimal skype slib startupmanager subversion sun-java6-jre tuxmath tuxpaint tuxpaint-plugins traceroute ubuntu-restricted-extras vim vlc wireshark workrave xchat x11proto-record-dev texlive texlive-humanities texlive-lang-portuguese babel latex-beamer abntex aspell-pt-br gedit-plugins gedit-latex-plugin rake rubber ruby texmaker ipython  
-babel  aspell-pt-br gedit-plugins  
-
+ 
 set_environment(){
 echo "# setting Android home sdk" >>~/.bashrc
 echo "export ANDROID_HOME=/home/adorilson/workspace/ides/Android/sdk" >>~/.bashrc
@@ -147,8 +121,6 @@ echo "export PATH=~/workspace/git-latexdiff:$PATH" >>~/.bashrc
 mendeley
 #java_stuff
 #dropbox_stuff
-#copy
-#libreoffice5
 #python_stuff
 #devs
 #skype_stuff
